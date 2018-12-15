@@ -1,10 +1,13 @@
 <template>
   <div class='hello'>
     <div class='container-fluid'>
-      <div 
-      v-for='project in projects'
-      :key='project.nid[0].value'>
-        <h2>{{project.title[0].value}}</h2>
+      <div class='container'>
+        <div
+        v-for='project in projects'
+        :key='project.nid[0].value'>
+          <h2>{{project.title[0].value}}</h2>
+          <p>Published {{project.field_date[0].value}}</p>
+        </div>
       </div>
     </div>
   </div>
